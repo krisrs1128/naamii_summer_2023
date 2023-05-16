@@ -1,0 +1,21 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "Description",
+      "description": "Notes for Day 2 morning session.",
+      "author": [],
+      "contents": "\nThis site contains materials for this session. You can also go directly to all the videos, discussions, or notebooks.\n\n\n\n",
+      "last_modified": "2021-12-20T19:58:02-06:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Foundations for Machine Learning",
+      "description": "Notes for the morning session for day 2 of NAAMII's Winter School on AI.\n",
+      "author": [],
+      "contents": "\nLearning Outcomes\n\nGiven a problem description, determine features that may be relevant, including those directly present in the raw data and those that must be constructed.\nGiven a problem description, determine an appropriate response variable.\nDesign a model evaluation scheme for a specific problem / model context, keeping in mind the dangers of overfitting and the bias-variance trade-off.\nGiven a covariate / response pair, use visualization and summary statistics to identify preprocessing or transformation methods that may improve downstream model performance.\nDiscuss the relative merits of linear, sparse, and tree-based methods in a particular problem setting, and prepare code that implements them appropriately.\nUse model summaries and data visualization to summarize the important features in a model and note areas for potential improvement.\nExercises\nExercises from this session are available here.\n\n\n\n",
+      "last_modified": "2021-12-20T19:58:05-06:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

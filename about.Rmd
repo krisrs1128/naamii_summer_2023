@@ -1,0 +1,11 @@
+---
+title: "Description"
+description: |
+  Notes for Day 2 morning session.
+---
+
+This site contains materials for this session. You can also go directly to all the videos, discussions, or notebooks.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```

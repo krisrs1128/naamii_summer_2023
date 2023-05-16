@@ -1,0 +1,23 @@
+---
+title: "Foundations for Machine Learning"
+description: | 
+  Notes for the morning session for day 2 of NAAMII's Winter School on AI.
+site: distill::distill_website
+listing: posts
+---
+
+
+## Learning Outcomes
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krisrs1128/winter_school_code/HEAD?urlpath=rstudio)
+
+1. Given a problem description, determine features that may be relevant, including those directly present in the raw data and those that must be constructed.
+2. Given a problem description, determine an appropriate response variable.
+3. Design a model evaluation scheme for a specific problem / model context, keeping in mind the dangers of overfitting and the bias-variance trade-off.
+4. Given a covariate / response pair, use visualization and summary statistics to identify preprocessing or transformation methods that may improve downstream model performance.
+5. Discuss the relative merits of linear, sparse, and tree-based methods in a particular problem setting, and prepare code that implements them appropriately.
+6. Use model summaries and data visualization to summarize the important features in a model and note areas for potential improvement.
+
+## Exercises
+
+Exercises from this session are available [here](https://docs.google.com/document/d/1xeP6FNdPo4D-zGgD0pSH2x-Szp5xH-HkYTvQCHoa4FA/edit#heading=h.isgbkg2nlxu2).
