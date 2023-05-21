@@ -58,7 +58,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -71,7 +71,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -85,14 +85,15 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+
   <!--radix_placeholder_meta_tags-->
 <title>NAAMII Winter School 2021 - Foundations for Machine Learning: Setting Up Supervised Learning Probems</title>
 
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-12-16"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-12-16"/>
+<meta property="article:published" itemprop="datePublished" content="2023-05-21"/>
+<meta property="article:created" itemprop="dateCreated" content="2023-05-21"/>
 <meta name="article:author" content="Kris Sankaran"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -109,12 +110,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Setting Up Supervised Learning Probems"]},{"type":"NULL"},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Kris Sankaran"]},{"type":"character","attributes":{},"value":["https://krisrs1128.github.com/LSLab"]},{"type":"character","attributes":{},"value":["UW Madison"]},{"type":"character","attributes":{},"value":["https://stat.wisc.edu"]}]}]},{"type":"character","attributes":{},"value":["12-16-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["highlight","highlight_downlit","self_contained"]}},"value":[{"type":"character","attributes":{},"value":["pygments"]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Setting Up Supervised Learning Probems"]},{"type":"NULL"},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Kris Sankaran"]},{"type":"character","attributes":{},"value":["https://krisrs1128.github.com/LSLab"]},{"type":"character","attributes":{},"value":["UW Madison"]},{"type":"character","attributes":{},"value":["https://stat.wisc.edu"]}]}]},{"type":"character","attributes":{},"value":["05-21-2023"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["highlight","highlight_downlit","self_contained"]}},"value":[{"type":"character","attributes":{},"value":["pygments"]},{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["figures/class-1d.ai","figures/class-1d.png","figures/class-2d.ai","figures/class-2d.png","figures/curve-1d.ai","figures/curve-1d.png","figures/curve-2d.ai","figures/curve-2d.png","figures/decision-tree-stump-2d.ai","figures/decision-tree-stump-2d.png","figures/decision-tree-stump.ai","figures/decision-tree-stump.png","figures/decision-tree-traffic.ai","figures/decision-tree-traffic.png","figures/linear-1d-sparse.ai","figures/linear-1d-sparse.png","figures/linear-1d.ai","figures/linear-1d.png","figures/linear-2d.ai","figures/linear-2d.png","figures/logistic-2d-arrow.png","figures/logistic-2d-sparse.ai","figures/logistic-2d-sparse.png","figures/logistic-2d.ai","figures/logistic-2d.png","figures/logx.png","figures/methods-relationships.ai","figures/methods-relationships.png","figures/need-to-rescale.ai","figures/penguin-features.png","welcome_files/anchor-4.2.2/anchor.min.js","welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/figure-html5/unnamed-chunk-101-1.png","welcome_files/figure-html5/unnamed-chunk-106-1.png","welcome_files/figure-html5/unnamed-chunk-15-1.png","welcome_files/figure-html5/unnamed-chunk-16-1.png","welcome_files/figure-html5/unnamed-chunk-17-1.png","welcome_files/figure-html5/unnamed-chunk-18-1.png","welcome_files/figure-html5/unnamed-chunk-22-1.png","welcome_files/figure-html5/unnamed-chunk-23-1.png","welcome_files/figure-html5/unnamed-chunk-27-1.png","welcome_files/figure-html5/unnamed-chunk-28-1.png","welcome_files/figure-html5/unnamed-chunk-29-1.png","welcome_files/figure-html5/unnamed-chunk-31-1.png","welcome_files/figure-html5/unnamed-chunk-36-1.png","welcome_files/figure-html5/unnamed-chunk-41-1.png","welcome_files/figure-html5/unnamed-chunk-94-1.png","welcome_files/figure-html5/unnamed-chunk-96-1.png","welcome_files/header-attrs-2.8/header-attrs.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/popper-2.6.0/popper.min.js","welcome_files/tippy-6.2.7/tippy-bundle.umd.min.js","welcome_files/tippy-6.2.7/tippy-light-border.css","welcome_files/tippy-6.2.7/tippy.css","welcome_files/tippy-6.2.7/tippy.umd.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["figures/1x/Plan de travail 1.png","figures/class-1d.ai","figures/class-1d.png","figures/class-2d.ai","figures/class-2d.png","figures/curve-1d.ai","figures/curve-1d.png","figures/curve-2d.ai","figures/curve-2d.png","figures/decision-tree-stump-2d.ai","figures/decision-tree-stump-2d.png","figures/decision-tree-stump.ai","figures/decision-tree-stump.png","figures/decision-tree-traffic.ai","figures/decision-tree-traffic.png","figures/linear-1d-sparse.ai","figures/linear-1d-sparse.png","figures/linear-1d.ai","figures/linear-1d.png","figures/linear-2d.ai","figures/linear-2d.png","figures/logistic-2d-arrow.png","figures/logistic-2d-sparse.ai","figures/logistic-2d-sparse.png","figures/logistic-2d.ai","figures/logistic-2d.png","figures/logx.png","figures/methods-relationships.ai","figures/methods-relationships.png","figures/need-to-rescale.ai","figures/need-to-rescale.png","figures/penguin-features.png","welcome_files/figure-html5/unnamed-chunk-15-1.png","welcome_files/figure-html5/unnamed-chunk-17-1.png","welcome_files/figure-html5/unnamed-chunk-22-1.png","welcome_files/figure-html5/unnamed-chunk-27-1.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -460,9 +461,9 @@ d-title {
 
 </style>
 
-<script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
-<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/font-awesome-6.2.1/css/all.min.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-6.2.1/css/v4-shims.min.css" rel="stylesheet"/>
 <script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
 <script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
 <script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -791,6 +792,7 @@ d-title .dt-tags {
 d-article table.gt_table td,
 d-article table.gt_table th {
   border-bottom: none;
+  font-size: 100%;
 }
 
 .html-widget {
@@ -1032,10 +1034,6 @@ figure img.external {
   position: relative;
   margin-bottom: 2.5em;
   margin-top: 1.5em;
-}
-
-.figure img {
-  width: 100%;
 }
 
 .figure .caption {
@@ -1867,7 +1865,22 @@ function init_distill() {
 
     // hoverable references
     $('span.citation[data-cites]').each(function() {
-      var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+      const citeChild = $(this).children()[0]
+      // Do not process if @xyz has been used without escaping and without bibliography activated
+      // https://github.com/rstudio/distill/issues/466
+      if (citeChild === undefined) return true
+
+      if (citeChild.nodeName == "D-FOOTNOTE") {
+        var fn = citeChild
+        $(this).html(fn.shadowRoot.querySelector("sup"))
+        $(this).id = fn.id
+        fn.remove()
+      }
+      var refs = $(this).attr('data-cites').split(" ");
+      var refHtml = refs.map(function(ref) {
+        // Could use CSS.escape too here, we insure backward compatibility in navigator
+        return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+      }).join("\n");
       window.tippy(this, {
         allowHTML: true,
         content: refHtml,
@@ -1878,6 +1891,31 @@ function init_distill() {
         placement: 'bottom-start'
       });
     });
+
+    // fix footnotes in tables (#411)
+    // replacing broken distill.pub feature
+    $('table d-footnote').each(function() {
+      // we replace internal showAtNode methode which is triggered when hovering a footnote
+      this.hoverBox.showAtNode = function(node) {
+        // ported from https://github.com/distillpub/template/pull/105/files
+        calcOffset = function(elem) {
+            let x = elem.offsetLeft;
+            let y = elem.offsetTop;
+            // Traverse upwards until an `absolute` element is found or `elem`
+            // becomes null.
+            while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                x += elem.offsetLeft;
+                y += elem.offsetTop;
+            }
+
+            return { left: x, top: y };
+        }
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+        const bbox = node.getBoundingClientRect();
+        const offset = calcOffset(node);
+        this.show([offset.left + bbox.width, offset.top + bbox.height]);
+      }
+    })
 
     // clear polling timer
     clearInterval(tid);
@@ -1977,6 +2015,8 @@ function init_common() {
   // mark non-body figures created by knitr chunks as 100% width
   $('.layout-chunk').each(function(i, val) {
     var figures = $(this).find('img, .html-widget');
+    // ignore leaflet img layers (#106)
+    figures = figures.filter(':not(img[class*="leaflet"])')
     if ($(this).attr('data-layout') !== "l-body") {
       figures.css('width', '100%');
     } else {
@@ -1999,7 +2039,7 @@ function init_common() {
   // get rid of index.html references in header
   if (window.location.protocol !== "file:") {
     $('.distill-site-header a[href]').each(function(i,val) {
-      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
     });
   }
 
@@ -2038,8 +2078,8 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.8/header-attrs.js"></script>
-  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/header-attrs-2.21/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2059,7 +2099,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Setting Up Supervised Learning Probems","authors":[{"author":"Kris Sankaran","authorURL":"https://krisrs1128.github.com/LSLab","affiliation":"UW Madison","affiliationURL":"https://stat.wisc.edu","orcidID":""}],"publishedDate":"2021-12-16T00:00:00.000+00:00","citationText":"Sankaran, 2021"}
+{"title":"Setting Up Supervised Learning Probems","authors":[{"author":"Kris Sankaran","authorURL":"https://krisrs1128.github.com/LSLab","affiliation":"UW Madison","affiliationURL":"https://stat.wisc.edu","orcidID":""}],"publishedDate":"2023-05-21T00:00:00.000-05:00","citationText":"Sankaran, 2023"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2091,7 +2131,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="d-byline">
   Kris Sankaran <a href="https://krisrs1128.github.com/LSLab" class="uri">https://krisrs1128.github.com/LSLab</a> (UW Madison)<a href="https://stat.wisc.edu" class="uri">https://stat.wisc.edu</a>
   
-<br/>12-16-2021
+<br/>05-21-2023
 </div>
 
 <div class="d-article">
@@ -2099,31 +2139,55 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </div>
 <ol type="1">
-<li><p>We are making predictions all the time, often without realizing it. For example, imagine we are waiting at a bus stop and want to guess how long it will be before a bus arrives. We can combine many sources of evidence,</p>
+<li><p>We are making predictions all the time, often without realizing it. For
+example, imagine we are waiting at a bus stop and want to guess how long it will
+be before a bus arrives. We can combine many sources of evidence,</p>
 <ul>
-<li>How many people are currently at the stop? If there are more people, we think a bus might arrive soon.</li>
-<li>What time of day is it? If it’s during rush hour, we would expect more frequent service.</li>
+<li>How many people are currently at the stop? If there are more people, we think
+a bus might arrive soon.</li>
+<li>What time of day is it? If it’s during rush hour, we would expect more
+frequent service.</li>
 <li>What is the weather like? If it is poor weather, we might expect delays.</li>
 <li>etc.</li>
 </ul>
-<p>To think about the process formally, we could imagine a vector <span class="math inline">\(\mathbf{x}_i \in \mathbb{R}^{D}\)</span> reflecting <span class="math inline">\(D\)</span> characteristics of our environment. If we collected data about how long we actually had to wait, call it <span class="math inline">\(y_i\)</span>, for every day in a year, then we would have a dataset <span class="math display">\[\begin{align*}
+<p>To think about the process formally, we could imagine a vector <span class="math inline">\(\mathbf{x}_i \in \mathbb{R}^{D}\)</span> reflecting <span class="math inline">\(D\)</span> characteristics of our environment.
+If we collected data about how long we actually had to wait, call it <span class="math inline">\(y_i\)</span>, for
+every day in a year, then we would have a dataset
+<span class="math display">\[\begin{align*}
 \left(\mathbf{x}_1, y_1\right) \\
 \left(\mathbf{x}_2, y_2\right) \\
 \vdots \\
 \left(\mathbf{x}_{365}, y_{365}\right) \\
-\end{align*}\]</span> and we could try to summarize the relationship <span class="math inline">\(\mathbf{x}_i \to y_i\)</span>. Methods for making this process automatic, based simply on a training dataset, are called supervised learning methods.</p></li>
-<li><p>In the above example, the inputs were a mix of counts (number of people at stop?) and categorical (weather) data types, and our response was a nonnegative continuous value. In general, we could have arbitrary data types for either input or response variable. A few types of outputs are so common that they come with their own names,</p>
+\end{align*}\]</span>
+and we could try to summarize the relationship <span class="math inline">\(\mathbf{x}_i \to y_i\)</span>. Methods
+for making this process automatic, based simply on a training dataset, are
+called supervised learning methods.</p></li>
+<li><p>In the above example, the inputs were a mix of counts (number of people at
+stop?) and categorical (weather) data types, and our response was a nonnegative
+continuous value. In general, we could have arbitrary data types for either
+input or response variable. A few types of outputs are so common that they come
+with their own names,</p>
 <ul>
 <li><span class="math inline">\(y_i\)</span> continuous <span class="math inline">\(\to\)</span> regression</li>
 <li><span class="math inline">\(y_i\)</span> categorical <span class="math inline">\(\to\)</span> classification</li>
 </ul>
 <p>For example,</p>
 <ul>
-<li>Trying to determine whether a patient’s disease will be cured by a treatment is a classification problem – the outcomes are either yes, they will be cured, or no, they won’t.</li>
-<li>Trying to estimate the crop yield of a plot of farmland based on a satellite image is a regression problem – it could be any continuous, nonnegative number.</li>
+<li>Trying to determine whether a patient’s disease will be cured by a
+treatment is a classification problem – the outcomes are either yes, they will
+be cured, or no, they won’t.</li>
+<li>Trying to estimate the crop yield of a plot of
+farmland based on a satellite image is a regression problem – it could be any
+continuous, nonnegative number.</li>
 </ul>
-<p>There are in fact many other types of responses (ordinal, multiresponse, survival, functional, image-to-image, …) each which come with their own names and set of methods, but for our purposes, it’s enough to focus on regression and classification.</p></li>
-<li><p>There is a nice geometric way of thinking about supervised learning. For regression, think of the inputs on the <span class="math inline">\(x\)</span>-axis and the response on the <span class="math inline">\(y\)</span>-axis. Regression then becomes the problem of estimating a one-dimensional curve from data.</p></li>
+<p>There are in fact many other types of responses (ordinal, multiresponse,
+survival, functional, image-to-image, …) each which come with their own names
+and set of methods, but for our purposes, it’s enough to focus on regression and
+classification.</p></li>
+<li><p>There is a nice geometric way of thinking about supervised learning. For
+regression, think of the inputs on the <span class="math inline">\(x\)</span>-axis and the response on the
+<span class="math inline">\(y\)</span>-axis. Regression then becomes the problem of estimating a one-dimensional
+curve from data.</p></li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/curve-1d.png" width="500" style="display: block; margin: auto;" /></p>
@@ -2132,67 +2196,102 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/curve-2d.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
-<p>If some of the inputs are categorical (e.g., poor vs. good weather), then the regression function is no longer a continuous curve, but we can still identify group means.</p>
+<p>If some of the inputs are categorical (e.g., poor vs. good weather), then the
+regression function is no longer a continuous curve, but we can still identify
+group means.</p>
 <ol start="4" type="1">
-<li>Classification has a similar geometric interpretation, except instead of a continuous response, we have categorical labels. We can associate classes with colors. If we have only one input, classification is the problem of learning which regions of the input are associated with certain colors.</li>
+<li>Classification has a similar geometric interpretation, except instead of a
+continuous response, we have categorical labels. We can associate classes with
+colors. If we have only one input, classification is the problem of learning
+which regions of the input are associated with certain colors.</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/class-1d.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
-<p>In higher-dimensions, the view is analogous. We just want to find boundaries between regions with clearly distinct colors. For example, for disease recurrence, blood pressure and resting heart rate might be enough to make a good guess about whether a patient will have recurrence or not.</p>
+<p>In higher-dimensions, the view is analogous. We just want to find boundaries
+between regions with clearly distinct colors. For example, for disease
+recurrence, blood pressure and resting heart rate might be enough to make a good
+guess about whether a patient will have recurrence or not.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/class-2d.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <h3 id="model-classes">Model Classes</h3>
 <ol start="5" type="1">
-<li>Drawing curves and boundaries sounds simple, but is a surprisingly difficult problem, especially when the number of potentially informative features <span class="math inline">\(D\)</span> is large. It helps to have predefined types of curves (and boundaries) that we can refer to and use to partially automate the process of supervised learning. We’ll call an example of these predefined curve types a “model class.” Let’s just build some intuition about what each model class looks like and how we might be able to fit it with data.</li>
+<li>Drawing curves and boundaries sounds simple, but is a surprisingly difficult
+problem, especially when the number of potentially informative features <span class="math inline">\(D\)</span> is
+large. It helps to have predefined types of curves (and boundaries) that we can
+refer to and use to partially automate the process of supervised learning. We’ll
+call an example of these predefined curve types a “model class.” Let’s just build some intuition about what each model class looks
+like and how we might be able to fit it with data.</li>
 </ol>
 <h4 id="linear-models">Linear Models</h4>
 <ol start="6" type="1">
-<li>Maybe the simplest curve is a linear one, <span class="math display">\[\begin{align*}
+<li>Maybe the simplest curve is a linear one,
+<span class="math display">\[\begin{align*}
 f_{b}\left(x\right) = b_0 + b_1 x_1.
-\end{align*}\]</span> Here, <span class="math inline">\(b_0\)</span> gives the <span class="math inline">\(y\)</span>-intercept and <span class="math inline">\(b_1\)</span> gives the slope.</li>
+\end{align*}\]</span>
+Here, <span class="math inline">\(b_0\)</span> gives the <span class="math inline">\(y\)</span>-intercept and <span class="math inline">\(b_1\)</span> gives the slope.</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/linear-1d.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
-<p>When we have many input features, the equivalent formula is <span class="math display">\[\begin{align*}
+<p>When we have many input features, the equivalent formula is
+<span class="math display">\[\begin{align*}
 f_{b}\left(x\right) = b_0 + b_1 x_1 + \dots + b_{D}x_{D} := b^{T}x,
-\end{align*}\]</span> where I’ve used the dot-product from linear algebra to simplify notation (after having appended a 1). This kind of model is called a <em>linear regression model</em>.</p>
+\end{align*}\]</span>
+where I’ve used the dot-product from linear algebra to simplify notation (after having appended a 1). This kind of model is called a <em>linear regression model</em>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/linear-2d.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <ol start="7" type="1">
-<li>How do we find a <span class="math inline">\(b\)</span> that fits the data well? We can try to optimize a “loss” function. This measures the quality of the fitted line. For linear regression, a good choice is squared error loss,</li>
+<li>How do we find a <span class="math inline">\(b\)</span> that fits the data well? We can try to optimize a “loss”
+function. This measures the quality of the fitted line. For linear regression, a
+good choice is squared error loss,</li>
 </ol>
 <p><span class="math display">\[\begin{align*}
 L\left(b\right) = \sum_{i = 1}^{N} \left(y_i - b^{T}x_{i}\right)^2.
 \end{align*}\]</span></p>
 <ol start="8" type="1">
-<li>For classification, we can imagine drawing a linear boundary. For simplicity, we’ll assume we have only two classes, though a similar partition of the space can be made for arbitrary numbers of classes.</li>
+<li>For classification, we can imagine drawing a linear boundary. For simplicity,
+we’ll assume we have only two classes, though a similar partition of the space
+can be made for arbitrary numbers of classes.</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/logistic-2d.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
-<p>To describe this, we need to define a direction <span class="math inline">\(b\)</span> perpendicular to the boundary. We will say that whenever <span class="math display">\[\begin{align*}
+<p>To describe this, we need to define a direction <span class="math inline">\(b\)</span> perpendicular to the
+boundary. We will say that whenever
+<span class="math display">\[\begin{align*}
 f_{b}\left(x\right) = \frac{1}{1 + \text{exp}\left(b^T x\right)}
-\end{align*}\]</span> is larger than 0.5, we’re in the red region, and whenever it’s smaller than 0.5, we’re in the purple region. This kind of model is called a <em>logistic regression model</em>.</p>
+\end{align*}\]</span>
+is larger than 0.5, we’re in the red region, and whenever it’s smaller than
+0.5, we’re in the purple region. This kind of model is called a <em>logistic regression model</em>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/logistic-2d-arrow.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <ol start="9" type="1">
-<li>We need a loss function for logistic regression too. In theory, we could continue to use squared error loss, but we can do better by considering the fact that the true response is only one of two values. To make things concrete, say that <span class="math inline">\(y_i = 1\)</span> whenever it is an red point, otherwise <span class="math inline">\(y_i = 0\)</span>. We can use binary cross-entropy loss,</li>
+<li>We need a loss function for logistic regression too. In theory, we could
+continue to use squared error loss, but we can do better by considering the fact
+that the true response is only one of two values. To make things concrete, say
+that <span class="math inline">\(y_i = 1\)</span> whenever it is an red point, otherwise <span class="math inline">\(y_i = 0\)</span>. We can use
+binary cross-entropy loss,</li>
 </ol>
 <p><span class="math display">\[\begin{align*}
 -\left[\sum_{i = 1}^{N} y_i \log\left(f_{b}\left(x_i\right)\right) + \left(1 - y_i\right) \log\left(1 - f_{b}\left(x_i\right)\right)\right]
 \end{align*}\]</span></p>
-<p>To understand this loss, note that each term decomposes into either the blue or red curve, depending on whether the <span class="math inline">\(y_i\)</span> is 1 or 0.</p>
+<p>To understand this loss, note that each term decomposes into either the blue or
+red curve, depending on whether the <span class="math inline">\(y_i\)</span> is 1 or 0.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/logx.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
-<p>If 1 is predicted with probability 1, then there is no loss (and conversely for 0). The loss increases the further the predicted probability is from the true class.</p>
+<p>If 1 is predicted with probability 1, then there is no loss (and conversely for
+0). The loss increases the further the predicted probability is from the true
+class.</p>
 <ol start="9" type="1">
-<li>Let’s fit a linear regression in code. Below, I’m loading a dataset about diabetes disease progression. The response <span class="math inline">\(y\)</span> is disease severity one year after diagnosis, it ranges from 25 (low severity) to 246 (high severity). There are <span class="math inline">\(D = 10\)</span> numeric predictors; below I print 4 samples corresponding to the first 5 features.</li>
+<li>Let’s fit a linear regression in code. Below, I’m loading a dataset about
+diabetes disease progression. The response <span class="math inline">\(y\)</span> is disease severity one year
+after diagnosis, it ranges from 25 (low severity) to 246 (high severity). There
+are <span class="math inline">\(D = 10\)</span> numeric predictors; below I print 4 samples corresponding to the first 5 features.</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -2202,179 +2301,225 @@ f_{b}\left(x\right) = \frac{1}{1 + \text{exp}\left(b^T x\right)}
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> datasets.load_diabetes(return_X_y<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>X[:<span class="dv">4</span>, :<span class="dv">5</span>] <span class="co"># first five predictors</span></span></code></pre></div>
-<pre><code>array([[ 0.03807591,  0.05068012,  0.06169621,  0.02187235, -0.0442235 ],
-       [-0.00188202, -0.04464164, -0.05147406, -0.02632783, -0.00844872],
-       [ 0.08529891,  0.05068012,  0.04445121, -0.00567061, -0.04559945],
-       [-0.08906294, -0.04464164, -0.01159501, -0.03665645,  0.01219057]])</code></pre>
+<pre><code>array([[ 0.03807591,  0.05068012,  0.06169621,  0.02187239, -0.0442235 ],
+       [-0.00188202, -0.04464164, -0.05147406, -0.02632753, -0.00844872],
+       [ 0.08529891,  0.05068012,  0.04445121, -0.00567042, -0.04559945],
+       [-0.08906294, -0.04464164, -0.01159501, -0.03665608,  0.01219057]])</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>y[:<span class="dv">4</span>] <span class="co"># example response</span></span></code></pre></div>
 <pre><code>array([151.,  75., 141., 206.])</code></pre>
 </div>
-<p>Let’s now fit a linear model from <span class="math inline">\(\mathbf{x}_1, \dots, \mathbf{x}_{N}\)</span> to <span class="math inline">\(y\)</span>. The first line tells python that we are using a <code>LinearRegression</code> model class. The second searches over coefficients <span class="math inline">\(b\)</span> to minimize the squared-error loss between the <span class="math inline">\(b^T x_i\)</span> and <span class="math inline">\(y_i\)</span>. The third line prints out the fitted coefficient <span class="math inline">\(\hat{b}\)</span>.</p>
+<p>Let’s now fit a linear model from <span class="math inline">\(\mathbf{x}_1, \dots, \mathbf{x}_{N}\)</span> to <span class="math inline">\(y\)</span>.
+The first line tells python that we are using a <code>LinearRegression</code> model class.
+The second searches over coefficients <span class="math inline">\(b\)</span> to minimize the squared-error loss
+between the <span class="math inline">\(b^T x_i\)</span> and <span class="math inline">\(y_i\)</span>. The third line prints out the fitted coefficient
+<span class="math inline">\(\hat{b}\)</span>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> linear_model.LinearRegression()</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)</span></code></pre></div>
-<pre><code>LinearRegression()</code></pre>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>model.coef_ <span class="co"># fitted b coefficients</span></span></code></pre></div>
-<pre><code>array([ -10.01219782, -239.81908937,  519.83978679,  324.39042769,
-       -792.18416163,  476.74583782,  101.04457032,  177.06417623,
-        751.27932109,   67.62538639])</code></pre>
+<style>#sk-container-id-4 {color: black;background-color: white;}#sk-container-id-4 pre{padding: 0;}#sk-container-id-4 div.sk-toggleable {background-color: white;}#sk-container-id-4 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-4 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-4 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-4 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-4 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-4 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-4 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-4 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-4 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-4 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-4 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-4 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-4 div.sk-item {position: relative;z-index: 1;}#sk-container-id-4 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-4 div.sk-item::before, #sk-container-id-4 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-4 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-4 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-4 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-4 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-4 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-4 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-4 div.sk-label-container {text-align: center;}#sk-container-id-4 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-4 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" checked><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>model.coef_ <span class="co"># fitted b coefficients</span></span></code></pre></div>
+<pre><code>array([ -10.0098663 , -239.81564367,  519.84592005,  324.3846455 ,
+       -792.17563855,  476.73902101,  101.04326794,  177.06323767,
+        751.27369956,   67.62669218])</code></pre>
 </div>
 <ol start="10" type="1">
-<li>Let’s do the same thing for a logistic regression. This time, we’ll use the Palmer’s Penguins dataset, which tries to classify penguins into one of three types based on their appearance. For example, two of the features are bill height and bill depth (figure from Allison Horst’s <code>palmerspenguins</code> <a href="https://allisonhorst.github.io/palmerpenguins/">package</a>).</li>
+<li>Let’s do the same thing for a logistic regression. This time, we’ll use the
+Palmer’s Penguins dataset, which tries to classify penguins into one of three
+types based on their appearance. For example, two of the features are bill
+height and bill depth (figure from Allison Horst’s <code>palmerspenguins</code>
+<a href="https://allisonhorst.github.io/palmerpenguins/">package</a>).</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/penguin-features.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <p>We’ll read the data from a public link and print the first few rows.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> pd.read_csv(<span class="st">&quot;https://uwmadison.box.com/shared/static/mnrdkzsb5tbhz2kpqahq1r2u3cpy1gg0.csv&quot;</span>)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>penguins.head()</span></code></pre></div>
-<pre><code>  species     island  bill_length_mm  ...  body_mass_g     sex  year
-0  Adelie  Torgersen            39.1  ...       3750.0    male  2007
-1  Adelie  Torgersen            39.5  ...       3800.0  female  2007
-2  Adelie  Torgersen            40.3  ...       3250.0  female  2007
-3  Adelie  Torgersen             NaN  ...          NaN     NaN  2007
-4  Adelie  Torgersen            36.7  ...       3450.0  female  2007
-
-[5 rows x 8 columns]</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> pd.read_csv(<span class="st">&quot;https://raw.githubusercontent.com/krisrs1128/stat679_code/0330ce6257ff077c5d4ed9f102af6be089f5c486/examples/week6/week6-4/penguins.csv&quot;</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>penguins.head()</span></code></pre></div>
+<pre><code>  species     island  bill_length_mm  bill_depth_mm  flipper_length_mm  body_mass_g     sex  year
+0  Adelie  Torgersen            39.1           18.7                181         3750    male  2007
+1  Adelie  Torgersen            39.5           17.4                186         3800  female  2007
+2  Adelie  Torgersen            40.3           18.0                195         3250  female  2007
+3  Adelie  Torgersen            36.7           19.3                193         3450  female  2007
+4  Adelie  Torgersen            39.3           20.6                190         3650    male  2007</code></pre>
 </div>
-<p>We’ll predict <code>species</code> using just <code>bill</code> length and depth. First, let’s make a plot to see how easy / difficult it will be to create a decision boundary.</p>
+<p>We’ll predict <code>species</code> using just <code>bill</code> length and depth. First, let’s make a
+plot to see how easy / difficult it will be to create a decision boundary.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(py<span class="sc">$</span>penguins) <span class="sc">+</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(bill_length_mm, bill_depth_mm, <span class="at">col =</span> species)) <span class="sc">+</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#3DD9BC&quot;</span>, <span class="st">&quot;#6DA671&quot;</span>, <span class="st">&quot;#F285D5&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Bill Length&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Bill Depth&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(py<span class="sc">$</span>penguins) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(bill_length_mm, bill_depth_mm, <span class="at">col =</span> species)) <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#3DD9BC&quot;</span>, <span class="st">&quot;#6DA671&quot;</span>, <span class="st">&quot;#F285D5&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Bill Length&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Bill Depth&quot;</span>)</span></code></pre></div>
 <p><img src="welcome_files/figure-html5/unnamed-chunk-15-1.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <ol start="11" type="1">
-<li>It seems like we should be able to draw nice boundaries between these classes. Let’s fit the model.</li>
+<li>It seems like we should be able to draw nice boundaries between these
+classes. Let’s fit the model.</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> linear_model.LogisticRegression()</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> penguins.dropna()</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> penguins[[<span class="st">&quot;bill_length_mm&quot;</span>, <span class="st">&quot;bill_depth_mm&quot;</span>]], penguins[<span class="st">&quot;species&quot;</span>]</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)</span></code></pre></div>
-<pre><code>LogisticRegression()</code></pre>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>penguins[<span class="st">&quot;y_hat&quot;</span>] <span class="op">=</span> model.predict(X)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> linear_model.LogisticRegression()</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>penguins <span class="op">=</span> penguins.dropna()</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> penguins[[<span class="st">&quot;bill_length_mm&quot;</span>, <span class="st">&quot;bill_depth_mm&quot;</span>]], penguins[<span class="st">&quot;species&quot;</span>]</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)</span></code></pre></div>
+<style>#sk-container-id-5 {color: black;background-color: white;}#sk-container-id-5 pre{padding: 0;}#sk-container-id-5 div.sk-toggleable {background-color: white;}#sk-container-id-5 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-5 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-5 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-5 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-5 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-5 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-5 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-5 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-5 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-5 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-5 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-5 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-5 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-5 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-5 div.sk-item {position: relative;z-index: 1;}#sk-container-id-5 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-5 div.sk-item::before, #sk-container-id-5 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-5 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-5 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-5 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-5 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-5 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-5 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-5 div.sk-label-container {text-align: center;}#sk-container-id-5 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-5 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LogisticRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" checked><label for="sk-estimator-id-5" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>penguins[<span class="st">&quot;y_hat&quot;</span>] <span class="op">=</span> model.predict(X)</span></code></pre></div>
 </div>
-<p>The plot below compares the predicted class (left, middle, and right panels) with the true class (color). We get most of the samples correct, but have a few missclassifications near the boundaries.</p>
+<p>The plot below compares the predicted class (left, middle, and right panels)
+with the true class (color). We get most of the samples correct, but have a few
+missclassifications near the boundaries.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(py<span class="sc">$</span>penguins) <span class="sc">+</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(bill_length_mm, bill_depth_mm, <span class="at">col =</span> species)) <span class="sc">+</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#3DD9BC&quot;</span>, <span class="st">&quot;#6DA671&quot;</span>, <span class="st">&quot;#F285D5&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Bill Length&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Bill Depth&quot;</span>) <span class="sc">+</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> y_hat)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(py<span class="sc">$</span>penguins) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(bill_length_mm, bill_depth_mm, <span class="at">col =</span> species)) <span class="sc">+</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#3DD9BC&quot;</span>, <span class="st">&quot;#6DA671&quot;</span>, <span class="st">&quot;#F285D5&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Bill Length&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Bill Depth&quot;</span>) <span class="sc">+</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> y_hat)</span></code></pre></div>
 <p><img src="welcome_files/figure-html5/unnamed-chunk-17-1.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
-<p>Exercise: Repeat this classification, but using at least two additional predictors.</p>
+<p>Exercise: Repeat this classification, but using at least two additional
+predictors.</p>
 <h4 id="sparse-linear-models">Sparse Linear Models</h4>
 <ol start="12" type="1">
-<li>In many cases, we will have recorded many types of features – coordinates of <span class="math inline">\(x_{i}\)</span> – that are not actually related to the response. A model that knows to ignore irrelevant features will do better than a model that tries to use all of them. This is the main idea behind using sparsity in linear regression. We again fit the model <span class="math display">\[\begin{align*}
+<li>In many cases, we will have recorded many types of features – coordinates
+of <span class="math inline">\(x_{i}\)</span> – that are not actually related to the response. A model that knows
+to ignore irrelevant features will do better than a model that tries to use
+all of them. This is the main idea behind using sparsity in linear regression.
+We again fit the model
+<span class="math display">\[\begin{align*}
 f_{b}\left(x\right) = b_0 + b_1 x_1 + \dots + b_{D}x_{D} := b^{T}x,
-\end{align*}\]</span> but we make the assumption that many of the <span class="math inline">\(b_{d}\)</span> are exactly 0. Graphically, we imagine that the response does not change at all as we change some of the inputs, all else held equal.</li>
+\end{align*}\]</span>
+but we make the assumption that many of the <span class="math inline">\(b_{d}\)</span> are exactly 0. Graphically,
+we imagine that the response does not change at all as we change some of the
+inputs, all else held equal.</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/linear-1d-sparse.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <ol start="13" type="1">
-<li>The same idea can be applied to logistic regression. In this case, having a coefficient <span class="math inline">\(b_d = 0\)</span> means that the probabilities for different class labels do not change at all as features <span class="math inline">\(x_d\)</span> is changed.</li>
+<li>The same idea can be applied to logistic regression. In this case, having a
+coefficient <span class="math inline">\(b_d = 0\)</span> means that the probabilities for different class labels
+do not change at all as features <span class="math inline">\(x_d\)</span> is changed.</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/logistic-2d-sparse.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <ol start="14" type="1">
-<li>To implement sparse linear regression using <code>sklearn</code>, we can use the <code>ElasticNet</code> class. We’ll work with The Office dataset (as in, the TV series, The Office). The task is to predict the IMDB ratings for each episode based on how often certain actors / writers appeared in it and also who the episode writers were.</li>
+<li>To implement sparse linear regression using <code>sklearn</code>, we can use the
+<code>ElasticNet</code> class. We’ll work with a dataset of American Baseball sports
+statistics. The task is to predict each player’s salary based on their batting
+statistics.</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>office <span class="op">=</span> pd.read_csv(<span class="st">&quot;https://uwmadison.box.com/shared/static/ab0opn7t8cagr1gj87ty94nomu5s347o.csv&quot;</span>)</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>office.head()</span></code></pre></div>
-<pre><code>   season  episode  andy  ...  jeffrey_blitz  justin_spitzer  imdb_rating
-0       1        1     0  ...              0               0          7.6
-1       1        2     0  ...              0               0          8.3
-2       1        3     0  ...              0               0          7.9
-3       1        5     0  ...              0               0          8.4
-4       1        6     0  ...              0               0          7.8
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>baseball <span class="op">=</span> pd.read_csv(<span class="st">&quot;https://github.com/krisrs1128/naamii_summer_2023/raw/main/assets/baseball.csv&quot;</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>baseball.head()</span></code></pre></div>
+<pre><code>              player    salary     AtBat      Hits     HmRun      Runs       RBI  ...    CWalks   LeagueN  DivisionW   PutOuts   Assists    Errors  NewLeagueN
+0        -Alan Ashby -0.135055 -0.601753 -0.594542 -0.527545 -1.203816 -0.521069  ...  0.434506  1.056743   0.979299  1.219174 -0.522196  0.212946    1.073007
+1       -Alvin Davis -0.123972  0.511566  0.491323  0.728577  0.440675  0.792549  ...  0.010353 -0.942706   0.979299  2.105095 -0.253380  0.818404   -0.928417
+2      -Andre Dawson -0.079637  0.626971  0.735088  0.956963  0.401520  1.024364  ...  0.354977  1.056743  -1.017256 -0.324044 -0.742763 -0.846605    1.073007
+3  -Andres Galarraga -0.985164 -0.561022 -0.461579 -0.184967 -0.616498 -0.366526  ... -0.860675  1.056743  -1.017256  1.837176 -0.542874 -0.695240    1.073007
+4   -Alfredo Griffin  0.474541  1.292248  1.355583 -0.870124  0.753911 -0.018804  ... -0.250955 -0.942706   0.979299 -0.031118  2.083253  2.483412   -0.928417
 
-[5 rows x 31 columns]</code></pre>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> office.iloc[:, <span class="dv">2</span>:<span class="op">-</span><span class="dv">1</span>], office[<span class="st">&quot;imdb_rating&quot;</span>]</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> (y <span class="op">-</span> y.mean()) <span class="op">/</span> y.std() <span class="co"># standardize</span></span></code></pre></div>
+[5 rows x 21 columns]</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> baseball.iloc[:, <span class="dv">2</span>:], baseball[<span class="st">&quot;salary&quot;</span>]</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> (y <span class="op">-</span> y.mean()) <span class="op">/</span> y.std() <span class="co"># standardize</span></span></code></pre></div>
 </div>
-<p>The block below fits the Elastic Net model and saves the coefficients <span class="math inline">\(\hat{b}\)</span>. Notice that most of them are 0 – only a few of the actors make a big difference in the rating.</p>
+<p>The block below fits the Elastic Net model and saves the coefficients <span class="math inline">\(\hat{b}\)</span>.
+Notice that most of them are 0 – only a few of the features make a big difference
+in the salary.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> linear_model.ElasticNet(alpha<span class="op">=</span><span class="fl">1e-1</span>, l1_ratio<span class="op">=</span><span class="fl">0.5</span>) <span class="co"># in real life, have to tune these parameters</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)</span></code></pre></div>
-<pre><code>ElasticNet(alpha=0.1)</code></pre>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>y_hat <span class="op">=</span> model.predict(X)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>beta_hat <span class="op">=</span> model.coef_ <span class="co"># notice the sparsity</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>beta_hat</span></code></pre></div>
-<pre><code>array([ 0.00116889,  0.00618263,  0.00820025,  0.0037306 ,  0.00846656,
-       -0.02521656,  0.00947178,  0.00793831,  0.00140553,  0.00312614,
-        0.01993542,  0.00238557,  0.00883436, -0.00194228,  0.01054646,
-        0.        ,  0.18606752,  0.        ,  0.        , -0.        ,
-        0.        ,  0.        ,  0.        , -0.        , -0.        ,
-       -0.        ,  0.        ,  0.        ])</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> linear_model.ElasticNet(alpha<span class="op">=</span><span class="fl">1e-1</span>, l1_ratio<span class="op">=</span><span class="fl">0.5</span>) <span class="co"># in real life, have to tune these parameters</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)</span></code></pre></div>
+<style>#sk-container-id-6 {color: black;background-color: white;}#sk-container-id-6 pre{padding: 0;}#sk-container-id-6 div.sk-toggleable {background-color: white;}#sk-container-id-6 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-6 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-6 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-6 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-6 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-6 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-6 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-6 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-6 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-6 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-6 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-6 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-6 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-6 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-6 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-6 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-6 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-6 div.sk-item {position: relative;z-index: 1;}#sk-container-id-6 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-6 div.sk-item::before, #sk-container-id-6 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-6 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-6 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-6 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-6 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-6 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-6 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-6 div.sk-label-container {text-align: center;}#sk-container-id-6 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-6 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-6" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>ElasticNet(alpha=0.1)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" checked><label for="sk-estimator-id-6" class="sk-toggleable__label sk-toggleable__label-arrow">ElasticNet</label><div class="sk-toggleable__content"><pre>ElasticNet(alpha=0.1)</pre></div></div></div></div></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>y_hat <span class="op">=</span> model.predict(X)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>beta_hat <span class="op">=</span> model.coef_ <span class="co"># notice the sparsity</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>beta_hat</span></code></pre></div>
+<pre><code>array([ 0.        ,  0.17423133,  0.        ,  0.        ,  0.        ,
+        0.1050172 ,  0.        ,  0.        ,  0.07963389,  0.06285448,
+        0.12726386,  0.16911053,  0.        ,  0.        , -0.0988662 ,
+        0.12489593, -0.        , -0.        ,  0.        ])</code></pre>
 </div>
-<p>We can confirm that the predictions are correlated relatively well with the truth.</p>
+<p>We can confirm that the predictions are correlated relatively well with the
+truth.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>office <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(py<span class="sc">$</span>X, <span class="at">y =</span> py<span class="sc">$</span>y, <span class="at">y_hat =</span> py<span class="sc">$</span>y_hat)</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(office) <span class="sc">+</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(y, y_hat)) <span class="sc">+</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;True IMDB Rating&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Predicted IMDB Rating&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>baseball <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(py<span class="sc">$</span>X, <span class="at">y =</span> py<span class="sc">$</span>y, <span class="at">y_hat =</span> py<span class="sc">$</span>y_hat)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(baseball) <span class="sc">+</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(y, y_hat)) <span class="sc">+</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;True IMDB Rating&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Predicted IMDB Rating&quot;</span>)</span></code></pre></div>
 <p><img src="welcome_files/figure-html5/unnamed-chunk-22-1.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <h4 id="tree-based-models">Tree-based Models</h4>
 <ol start="15" type="1">
-<li>Tree-based models fit a different class of curves. To motivate them, consider making a prediction for the bus time arrival problem using the following diagram,</li>
+<li>Tree-based models fit a different class of curves. To motivate them,
+consider making a prediction for the bus time arrival problem using the
+following diagram,</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/decision-tree-traffic.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
-<p>Notice that we can use the same logic to do either regression or classification. For regression, we associate each “leaf” at the bottom of the tree with a continuous prediction. For classification, we associate leaves with probabilities for different classes. It turns out that we can train these models using squared error and cross-entropy losses as before, though the details are beyond the scope of these notes.</p>
+<p>Notice that we can use the same logic to do either regression or classification.
+For regression, we associate each “leaf” at the bottom of the tree with a
+continuous prediction. For classification, we associate leaves with
+probabilities for different classes. It turns out that we can train these models
+using squared error and cross-entropy losses as before, though the details are
+beyond the scope of these notes.</p>
 <ol start="16" type="1">
-<li>It’s not immediately obvious, but these rules are equivalent to drawing curves that are piecewise constant over subsets of the input space. Let’s convince ourselves using some pictures. First, notice that a tree with a single split is exactly a “curve” that takes on two values, depending on the split point,</li>
+<li>It’s not immediately obvious, but these rules are equivalent to drawing
+curves that are piecewise constant over subsets of the input space. Let’s
+convince ourselves using some pictures. First, notice that a tree with a single
+split is exactly a “curve” that takes on two values, depending on the split
+point,</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/decision-tree-stump.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <p>If we split the same variable deeper, it creates more steps,</p>
-<p>What if we had two variables? Depending on the order, of the splits, we create different axis-aligned partitions,</p>
+<p>What if we had two variables? Depending on the order, of the splits, we create
+different axis-aligned partitions,</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/decision-tree-stump-2d.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <p>Q: What would be the diagram if I had switched the order of the splits (traffic before rain)?</p>
 <ol start="17" type="1">
-<li><p>A very common variation on tree-based models computes a large ensemble of trees and then combines their curves in some way. How exactly they are combined is beyond the scope of these notes, but this is what random forests and gradient boosted decision trees are doing in the background.</p></li>
-<li><p>We can implement these models in <code>sklearn</code> using <code>RandomForestRegressor</code> / <code>RandomForestClassifier</code>, and <code>GradientBoostingRegressor</code> / <code>GradientBoostingClassifier</code>. Let’s just see an example of a boosting classifier using the penguins dataset. The fitting / prediction code is very similar to</p></li>
+<li><p>A very common variation on tree-based models computes a large ensemble of
+trees and then combines their curves in some way. How exactly they are combined
+is beyond the scope of these notes, but this is what random forests and gradient
+boosted decision trees are doing in the background.</p></li>
+<li><p>We can implement these models in <code>sklearn</code> using <code>RandomForestRegressor</code> /
+<code>RandomForestClassifier</code>, and <code>GradientBoostingRegressor</code> /
+<code>GradientBoostingClassifier</code>. Let’s just see an example of a boosting classifier
+using the penguins dataset. The fitting / prediction code is very similar to</p></li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> GradientBoostingClassifier</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> GradientBoostingClassifier()</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> penguins[[<span class="st">&quot;bill_length_mm&quot;</span>, <span class="st">&quot;bill_depth_mm&quot;</span>]], penguins[<span class="st">&quot;species&quot;</span>]</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)</span></code></pre></div>
-<pre><code>GradientBoostingClassifier()</code></pre>
-<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>penguins[<span class="st">&quot;y_hat&quot;</span>] <span class="op">=</span> model.predict(X)</span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> GradientBoostingClassifier</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> GradientBoostingClassifier()</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> penguins[[<span class="st">&quot;bill_length_mm&quot;</span>, <span class="st">&quot;bill_depth_mm&quot;</span>]], penguins[<span class="st">&quot;species&quot;</span>]</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>model.fit(X, y)</span></code></pre></div>
+<style>#sk-container-id-7 {color: black;background-color: white;}#sk-container-id-7 pre{padding: 0;}#sk-container-id-7 div.sk-toggleable {background-color: white;}#sk-container-id-7 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-7 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-7 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-7 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-7 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-7 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-7 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-7 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-7 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-7 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-7 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-7 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-7 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-7 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-7 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-7 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-7 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-7 div.sk-item {position: relative;z-index: 1;}#sk-container-id-7 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-7 div.sk-item::before, #sk-container-id-7 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-7 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-7 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-7 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-7 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-7 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-7 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-7 div.sk-label-container {text-align: center;}#sk-container-id-7 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-7 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-7" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>GradientBoostingClassifier()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" checked><label for="sk-estimator-id-7" class="sk-toggleable__label sk-toggleable__label-arrow">GradientBoostingClassifier</label><div class="sk-toggleable__content"><pre>GradientBoostingClassifier()</pre></div></div></div></div></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>penguins[<span class="st">&quot;y_hat&quot;</span>] <span class="op">=</span> model.predict(X)</span></code></pre></div>
 </div>
-<p>We use the same visualization code to check predictions against the truth. The boosting classifier makes no mistakes on the training data.</p>
+<p>We use the same visualization code to check predictions against the truth. The
+boosting classifier makes no mistakes on the training data.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(py<span class="sc">$</span>penguins) <span class="sc">+</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(bill_length_mm, bill_depth_mm, <span class="at">col =</span> species)) <span class="sc">+</span></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#3DD9BC&quot;</span>, <span class="st">&quot;#6DA671&quot;</span>, <span class="st">&quot;#F285D5&quot;</span>)) <span class="sc">+</span></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Bill Length&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Bill Depth&quot;</span>) <span class="sc">+</span></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> y_hat)</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(py<span class="sc">$</span>penguins) <span class="sc">+</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(bill_length_mm, bill_depth_mm, <span class="at">col =</span> species)) <span class="sc">+</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">&quot;#3DD9BC&quot;</span>, <span class="st">&quot;#6DA671&quot;</span>, <span class="st">&quot;#F285D5&quot;</span>)) <span class="sc">+</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Bill Length&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Bill Depth&quot;</span>) <span class="sc">+</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> y_hat)</span></code></pre></div>
 <p><img src="welcome_files/figure-html5/unnamed-chunk-27-1.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <h3 id="relationships-across-classes">Relationships across classes</h3>
 <ol start="19" type="1">
-<li>The diagram below summarizes the relationships across elements of the model class.</li>
+<li>The diagram below summarizes the relationships across elements of the model
+class.</li>
 </ol>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="figures/methods-relationships.png" width="500" style="display: block; margin: auto;" /></p>
 </div>
 <ol start="20" type="1">
-<li>When should we use which of these approaches? Here are some relative strengths and weaknesses.</li>
+<li>When should we use which of these approaches? Here are some relative
+strengths and weaknesses.</li>
 </ol>
 <table>
 <colgroup>
@@ -2411,15 +2556,25 @@ f_{b}\left(x\right) = b_0 + b_1 x_1 + \dots + b_{D}x_{D} := b^{T}x,
 <li>Try matching models to responses in the examples below,</li>
 </ol>
 <ul>
-<li>Q1: We want to predict whether a patient has a disease given just their genetic profile. There are 1000 genes that can serve as predictors. There are only two possible responses.</li>
-<li>Q2: A user on a site has been watching (too many…) episodes of Doctor Who. How many more minutes will they remain on the site today? As predictors, you have features of their current and past viewing behavior (e.g., current time of day, number of hours on the site per week for each of the last 4 weeks, etc.). We suspect that there are important nonlinear relationships between these predictors and the response.</li>
-<li>Q3: We are trying to predict the next hour’s total energy production in a wind farm. We have a years worth of past production and weather data, but right now, we just want a baseline using current wind speed and the last hour’s production.</li>
+<li>Q1: We want to predict whether a patient has a disease given just their genetic
+profile. There are 1000 genes that can serve as predictors. There are only two
+possible responses.</li>
+<li>Q2: A user on a site has been watching (too many…) episodes of Doctor
+Who. How many more minutes will they remain on the site today? As predictors,
+you have features of their current and past viewing behavior (e.g.,
+current time of day, number of hours on the site per week for each of the last 4 weeks,
+etc.). We suspect that there are important nonlinear relationships between
+these predictors and the response.</li>
+<li>Q3: We are trying to predict the next hour’s total energy production in a wind
+farm. We have a years worth of past production and weather data, but right now,
+we just want a baseline using current wind speed and the last hour’s production.</li>
 </ul>
 <p>The answers are,</p>
 <ul>
 <li>A1: Sparse logistic regression. We have two classes, and most of the genes are unlikely to be relevant for classification.</li>
 <li>A2: A tree-based method, like random forests or gradient boosting. This is because we anticipate a nonlinear relationship.</li>
-<li>A3: Linear regression. The response is continuous and we just need a baseline using two predictors.</li>
+<li>A3: Linear regression. The response is continuous and we just need a baseline
+using two predictors.</li>
 </ul>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
