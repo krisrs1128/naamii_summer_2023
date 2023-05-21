@@ -9,7 +9,7 @@ listing: posts
 
 ## Learning Outcomes
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krisrs1128/winter_school_code/HEAD?urlpath=rstudio)
+Notebooks [[1](https://colab.research.google.com/drive/10jGSLch_g7G72L41rjnswx69PXneeT3w), [2](https://colab.research.google.com/drive/1uJPeyBMRN3vqCoALCvik6X4ccGdpc3zS), [3](https://colab.research.google.com/drive/1C--MSMalpnjh4R5WkgL70J4IIpKlg6U0)]
 
 1. Given a problem description, determine features that may be relevant, including those directly present in the raw data and those that must be constructed.
 2. Given a problem description, determine an appropriate response variable.
@@ -20,4 +20,4 @@ listing: posts
 
 ## Exercises
 
-Exercises from this session are available [here](https://docs.google.com/document/d/1xeP6FNdPo4D-zGgD0pSH2x-Szp5xH-HkYTvQCHoa4FA/edit#heading=h.isgbkg2nlxu2).
+Exercises from this session are available [here](https://docs.google.com/document/d/1EbjbHa6UW392LbIl7HVHEFfc9hYjUZnsJ8CPm4DZfd4/edit?usp=sharing)

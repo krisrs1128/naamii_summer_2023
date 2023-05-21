@@ -381,7 +381,7 @@ boosted decision trees are doing in the background.
 18. We can implement these models in `sklearn` using `RandomForestRegressor` /
 `RandomForestClassifier`, and `GradientBoostingRegressor` /
 `GradientBoostingClassifier`. Let's just see an example of a boosting classifier
-using the penguins dataset. The fitting / prediction code is very similar to
+using the penguins dataset. The fitting / prediction code is very similar to what we used for the sparse regression.
 
 ```{python, echo = TRUE}
 from sklearn.ensemble import GradientBoostingClassifier
