@@ -29,6 +29,7 @@ theme424 <- theme_minimal() +
   )
 theme_set(theme424)
 opts_chunk$set(echo = FALSE, fig.align = "center", out.width = 500)
+use_condaenv("/Users/ksankaran/miniconda3/bin/python3")
 ```
 
 1. Even if we can effectively draw curves through data, we might not actually be
@@ -129,7 +130,7 @@ import pandas as pd
 import numpy as np
 
 # prepare data
-penguins = pd.read_csv("https://uwmadison.box.com/shared/static/mnrdkzsb5tbhz2kpqahq1r2u3cpy1gg0.csv")
+penguins = pd.read_csv("https://raw.githubusercontent.com/krisrs1128/stat679_code/0330ce6257ff077c5d4ed9f102af6be089f5c486/examples/week6/week6-4/penguins.csv")
 penguins = penguins.dropna()
 X, y = penguins[["bill_length_mm", "bill_depth_mm"]], penguins["species"]
 (

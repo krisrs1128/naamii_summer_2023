@@ -29,6 +29,7 @@ theme424 <- theme_minimal() +
     legend.position = "bottom"
   )
 theme_set(theme424)
+use_condaenv("/Users/ksankaran/miniconda3/bin/python3")
 ```
 
 1. We are making predictions all the time, often without realizing it. For
@@ -306,7 +307,7 @@ statistics. The task is to predict each player's salary based on their batting
 statistics.
 
 ```{python, echo = TRUE}
-baseball = pd.read_csv("~/Downloads/baseball.csv")
+baseball = pd.read_csv("https://github.com/krisrs1128/naamii_summer_2023/raw/main/assets/baseball.csv")
 baseball.head()
 X, y = baseball.iloc[:, 2:], baseball["salary"]
 y = (y - y.mean()) / y.std() # standardize
