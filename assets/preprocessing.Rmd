@@ -1,0 +1,25 @@
+---
+title: "preprocess"
+output: html_document
+date: "`r Sys.Date()`"
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+library(ISLR2)
+library(tidyverse)
+
+Hitters <- na.omit(Hitters)
+x <- model.matrix(Salary ~ ., Hitters)[, -1]
+y <- Hitters$Salary
+
+cbind(salary = y, x) |>
+  scale() |>
+  data.frame() |>
+  rownames_to_column("player") |>
+  write_csv("~/Downloads/baseball.csv")
+```
+
