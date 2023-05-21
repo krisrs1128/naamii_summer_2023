@@ -73,23 +73,22 @@ include_graphics("figures/variable-importance.png")
 ```
 
 4. Let's see how we extract coefficients and variable importance measures in
-`sklearn.` First, we'll revisit the Office prediction task. Earlier, we found
-that the cast and writers were predictive of user ratings, but we never
-discussed which of the features were actually relevant. The block below reruns the code we had from before.
+`sklearn.` First, we'll revisit the baseball prediction task. Earlier, we never
+actually discussed of the features were actually relevant. The block below
+reruns the code we had from before.
 
 ```{python, echo = TRUE}
 import pandas as pd
 import numpy as np
 from sklearn import linear_model
 
-office = pd.read_csv("https://uwmadison.box.com/shared/static/ab0opn7t8cagr1gj87ty94nomu5s347o.csv")
-X, y = office.iloc[:, 2:-1], office["imdb_rating"]
-y = (y - y.mean()) / y.std() # standardize
+baseball = pd.read_csv("/Users/ksankaran/Downloads/baseball.csv")
+X, y = baseball.iloc[:, 2:], baseball["salary"]
 
 model = linear_model.ElasticNet(alpha=1e-1, l1_ratio=0.5) # in real life, have to tune these parameters
 model.fit(X, y)
-office["y_hat"] = model.predict(X)
-office["imdb_rating"] = y
+baseball["y_hat"] = model.predict(X)
+baseball["y"] = y
 ```
 
 Let's sort the predictors by the sizes of their coefficients.
@@ -101,11 +100,11 @@ X.columns[ranks]
 The block below plots the features against the truth and the predicted values, for a few of the more important features.
 
 ```{r}
-for (character in c("greg_daniels", "kelly", "phyllis")) {
-  p <- ggplot(py$office) +
-    geom_point(aes_string(character, "imdb_rating"), position = position_jitter(w =0.1)) +
-    geom_point(aes_string(character, "y_hat"), position = position_jitter(w =0.1), col = "blue") +
-    labs(title = paste("Plot for ", character))
+for (feature in colnames(py$X)) {
+  p <- ggplot(py$baseball) +
+    geom_point(aes(.data[[feature]], y), position = position_jitter(w =0.1)) +
+    geom_point(aes(.data[[feature]], y), position = position_jitter(w =0.1), col = "blue") +
+    labs(title = paste("Plot for ", feature))
   print(p)
 }
 ```
@@ -131,6 +130,7 @@ tend to share?
 ```{r, out.width = 650}
 include_graphics("figures/error-analysis.png")
 ```
+
 
 7. Error Prediction: A related approach is to use the sample-level test set
 errors from the previous step and use them as features in a new model from a

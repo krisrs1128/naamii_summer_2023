@@ -6,7 +6,7 @@ author:
     url: https://krisrs1128.github.com/LSLab
     affiliation: UW Madison
     affiliation_url: https://stat.wisc.edu
-date: 12-16-2021
+date: 05-21-2023
 output:
   distill::distill_article:
     highlight: pygments
@@ -237,7 +237,7 @@ We'll read the data from a public link and print the first few rows.
 ```{python, echo = TRUE}
 import pandas as pd
 
-penguins = pd.read_csv("https://uwmadison.box.com/shared/static/mnrdkzsb5tbhz2kpqahq1r2u3cpy1gg0.csv")
+penguins = pd.read_csv("https://raw.githubusercontent.com/krisrs1128/stat679_code/0330ce6257ff077c5d4ed9f102af6be089f5c486/examples/week6/week6-4/penguins.csv")
 penguins.head()
 ```
 We'll predict `species` using just `bill` length and depth. First, let's make a
@@ -301,19 +301,19 @@ include_graphics("figures/logistic-2d-sparse.png")
 ```
 
 14. To implement sparse linear regression using `sklearn`, we can use the
-`ElasticNet` class. We'll work with The Office dataset (as in, the TV series,
-The Office). The task is to predict the IMDB ratings for each episode based on
-how often certain actors / writers appeared in it and also who the episode writers were.
+`ElasticNet` class. We'll work with a dataset of American Baseball sports
+statistics. The task is to predict each player's salary based on their batting
+statistics.
 
 ```{python, echo = TRUE}
-office = pd.read_csv("https://uwmadison.box.com/shared/static/ab0opn7t8cagr1gj87ty94nomu5s347o.csv")
-office.head()
-X, y = office.iloc[:, 2:-1], office["imdb_rating"]
+baseball = pd.read_csv("~/Downloads/baseball.csv")
+baseball.head()
+X, y = baseball.iloc[:, 2:], baseball["salary"]
 y = (y - y.mean()) / y.std() # standardize
 ```
 The block below fits the Elastic Net model and saves the coefficients $\hat{b}$.
-Notice that most of them are 0 -- only a few of the actors make a big difference
-in the rating.
+Notice that most of them are 0 -- only a few of the features make a big difference
+in the salary.
 
 ```{python, echo = TRUE}
 model = linear_model.ElasticNet(alpha=1e-1, l1_ratio=0.5) # in real life, have to tune these parameters
@@ -328,8 +328,8 @@ We can confirm that the predictions are correlated relatively well with the
 truth.
 
 ```{r, echo = TRUE}
-office <- data.frame(py$X, y = py$y, y_hat = py$y_hat)
-ggplot(office) +
+baseball <- data.frame(py$X, y = py$y, y_hat = py$y_hat)
+ggplot(baseball) +
   geom_point(aes(y, y_hat)) +
   labs(x = "True IMDB Rating", y = "Predicted IMDB Rating")
 ```
