@@ -6,7 +6,7 @@ author:
     url: https://krisrs1128.github.com/LSLab
     affiliation: UW Madison
     affiliation_url: https://stat.wisc.edu
-date: 05-21-2023
+date: 05-19-2023
 output:
   distill::distill_article:
     highlight: pygments
