@@ -5,8 +5,8 @@
       "title": "Description",
       "description": "Notes for Day 2 morning session.",
       "author": [],
-      "contents": "\nThis site contains materials for this session. You can also go directly to all the videos, discussions, or notebooks.\n\n\n\n",
-      "last_modified": "2023-05-21T18:31:16-05:00"
+      "contents": "\nThis site contains materials for this session. You can view the source code here: https://github.com/krisrs1128/naamii_summer_2023\n\n\n\n",
+      "last_modified": "2023-05-22T19:54:43-05:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,7 @@
       "description": "Notes for the morning session for day 2 of NAAMII's Winter School on AI.\n",
       "author": [],
       "contents": "\nLearning Outcomes\nNotebooks [1, 2, 3]\nGiven a problem description, determine features that may be relevant, including those directly present in the raw data and those that must be constructed.\nGiven a problem description, determine an appropriate response variable.\nDesign a model evaluation scheme for a specific problem / model context, keeping in mind the dangers of overfitting and the bias-variance trade-off.\nGiven a covariate / response pair, use visualization and summary statistics to identify preprocessing or transformation methods that may improve downstream model performance.\nDiscuss the relative merits of linear, sparse, and tree-based methods in a particular problem setting, and prepare code that implements them appropriately.\nUse model summaries and data visualization to summarize the important features in a model and note areas for potential improvement.\nExercises\nExercises from this session are available here\n\n\n\n",
-      "last_modified": "2023-05-21T18:31:16-05:00"
+      "last_modified": "2023-05-22T19:54:44-05:00"
     }
   ],
   "collections": ["posts/posts.json"]
