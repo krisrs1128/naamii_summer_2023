@@ -307,6 +307,9 @@ statistics. The task is to predict each player's salary based on their batting
 statistics.
 
 ```{python, echo = TRUE}
+import pandas as pd
+
+
 baseball = pd.read_csv("https://github.com/krisrs1128/naamii_summer_2023/raw/main/assets/baseball.csv")
 baseball.head()
 X, y = baseball.iloc[:, 2:], baseball["salary"]
@@ -317,6 +320,7 @@ Notice that most of them are 0 -- only a few of the features make a big differen
 in the salary.
 
 ```{python, echo = TRUE}
+from sklearn import datasets, linear_model
 model = linear_model.ElasticNet(alpha=1e-1, l1_ratio=0.5) # in real life, have to tune these parameters
 model.fit(X, y)
 y_hat = model.predict(X)
@@ -328,11 +332,17 @@ beta_hat
 We can confirm that the predictions are correlated relatively well with the
 truth.
 
+```{r}
+cbind(py$y, py$y_hat)
+```
+
+
 ```{r, echo = TRUE}
 baseball <- data.frame(py$X, y = py$y, y_hat = py$y_hat)
 ggplot(baseball) +
   geom_point(aes(y, y_hat)) +
-  labs(x = "True IMDB Rating", y = "Predicted IMDB Rating")
+  geom_abline(slope = 1, col = "red") +
+  labs(x = "True Salary", y = "Predicted Salary")
 ```
 
 #### Tree-based Models
